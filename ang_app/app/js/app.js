@@ -4,8 +4,12 @@ var app = angular.module("myApp", ['ngRoute', 'ngResource']);
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'partials/show.html',
+        templateUrl: 'partials/splash.html',
         controller: 'MainController'
+      })
+      .when('/stories', {
+        templateUrl: 'partials/allStories.html',
+        controller: 'StoriesController'
       })
     $locationProvider.html5Mode(true);
 });
