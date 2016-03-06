@@ -1,9 +1,10 @@
 <div class="storiesLogo" >
   <img class='storiesPicture' src="http://media.wizards.com/images/magic/daily/stf/stf163_fullMoonsRise.jpg" alt="">
-  Browse our stories or create your own!
+  <h3>Browse our stories or create your own!</h3>
 </div>
-<div class ='stories' ng-repeat='story in story_collection'>
-  <p>{{story.author}}</p>
-  <p>{{story.story}}</p>
-  <p>{{story.rating}}</p>
-</div>
+
+  <div class ='stories col-xs-5' ng-repeat='story in story_collection'>
+    <p class= 'pull-left'>Author: {{story.author}}</p>
+    <p class= 'pull-right'>Rating: {{story.rating}}</p>
+    <p class= 'pull-left'>{{story.story}}</p>
+  </div>
