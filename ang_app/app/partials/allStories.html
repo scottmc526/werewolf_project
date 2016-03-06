@@ -1,4 +1,8 @@
-<div ng-repeat='story in story_collection'>
+<div class="storiesLogo" >
+  <img class='storiesPicture' src="http://media.wizards.com/images/magic/daily/stf/stf163_fullMoonsRise.jpg" alt="">
+  Browse our stories or create your own!
+</div>
+<div class ='stories' ng-repeat='story in story_collection'>
   <p>{{story.author}}</p>
   <p>{{story.story}}</p>
   <p>{{story.rating}}</p>
