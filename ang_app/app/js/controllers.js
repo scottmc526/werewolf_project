@@ -9,10 +9,11 @@ app.controller('StoriesController', function($scope, $http, werewolfService){
   })
 })
 
-app.controller('PostController', function($scope, $http, werewolfService){
+app.controller('PostController', function($scope, $http, $window, werewolfService){
   $scope.story = {};
   $scope.newStory = function(){
     story_info = $scope.story
     werewolfService.postStory(story_info);
+    $window.location.href = '/stories';
   }
 })
