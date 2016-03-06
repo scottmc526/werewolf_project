@@ -81,11 +81,21 @@ body{
   background-color: #2B1E15;
 }
 
+h3{
+  position: relative;
+  bottom: 65%;
+  left: 25%;
+  right: 25%;
+  width: 45%;
+  text-align: center;
+}
+
 .stories{
   background-color: #422E24;
   color: #D4B18A;
-  border: 1px solid black;
-  margin-top: 25px;
+  border-radius: 5px;
+  margin: 10px;
+  width: 100%;
 }
 
 .storiesLogo{
