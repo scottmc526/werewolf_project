@@ -21,12 +21,10 @@ app.controller('PostController', function($scope, $http, $window, werewolfServic
 app.controller('RandomController', function($scope, $http, $window, werewolfService){
   werewolfService.getStories().then(function(payload){
     $scope.story_collection = payload.data;
-    // console.log($scope.story_collection[0]);
     $scope.randomStory =  function(){
       $scope.rando = [];
       $scope.num = Math.ceil(Math.random() * ($scope.story_collection.length - 0)) + 0;
       $scope.rando.push($scope.story_collection[$scope.num])
-      console.log($scope.rando);
     }
   })
 })
