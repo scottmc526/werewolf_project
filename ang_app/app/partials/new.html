@@ -1,12 +1,12 @@
 <form ng-submit='newStory()'>
   <label>Author:</label>
   <br>
-  <input ng-model='story.author' type="text" placeholder="Your name">
+  <input ng-model='story.author' required type="text" placeholder="Your name">
   <br>
   <label>Story:</label>
   <br>
-  <textarea ng-model='story.story' rows="8" cols="40" placeholder='Enter your werewolf story'></textarea>
+  <textarea ng-model='story.story' required rows="8" cols="40" placeholder='Enter your werewolf story'></textarea>
   <br>
-  <button type='submit' class='btn btn-danger'>Submit</button>
+  <button type='submit' class='btn btn-danger' ng-disabled='form.$invalid'>Submit</button>
 
 </form>
