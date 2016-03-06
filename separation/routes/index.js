@@ -13,4 +13,11 @@ router.get('/', function(req, res, next) {
   })
 });
 
+router.post('/', function(req, res){
+  Werewolf().insert(req.body).then(function(payload){
+    res.json(payload)
+  })
+})
+
+
 module.exports = router;

@@ -11,5 +11,10 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: 'partials/allStories.html',
         controller: 'StoriesController'
       })
+      .when('/stories/new', {
+        templateUrl: 'partials/new.html',
+        controller: 'PostController'
+
+      })
     $locationProvider.html5Mode(true);
 });
