@@ -14,7 +14,10 @@ app.config(function($routeProvider, $locationProvider) {
       .when('/stories/new', {
         templateUrl: 'partials/new.html',
         controller: 'PostController'
-
+      })
+      .when('/stories/random', {
+        templateUrl: 'partials/show.html',
+        controller: 'RandomController'
       })
     $locationProvider.html5Mode(true);
 });

@@ -1,1 +1,5 @@
-<p>HI BITCH!</p>
+<button ng-click='randomStory()' class='btn btn-danger'>Generate Story</button>
+<div class='stories' ng-repeat='story in rando'>
+  <p>{{story.author}}</p>
+  <p>{{story.story}}</p>
+</div>
