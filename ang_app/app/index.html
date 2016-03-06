@@ -9,7 +9,7 @@
   </head>
   <body>
     <base href="/">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" id='navHeader'>
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -22,15 +22,10 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/stories/random">Random Story <span class="sr-only">(current)</span></a></li>
-        <li><a href="stories/new">Create a story</a></li>
+        <li><a href="/stories/random">Random Story</a></li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-      </form>
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="stories/new">Create a story</a></li>
       </ul>
     </div>
   </div>
@@ -39,6 +34,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-route.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-resource.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:400italic' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src='js/app.js'></script>
     <script type="text/javascript" src="js/controllers.js"></script>
     <script type="text/javascript" src="js/services.js"></script>
