@@ -1,5 +1,8 @@
-<button ng-click='randomStory()' class='btn btn-danger'>Generate Story</button>
-<div class='stories' ng-repeat='story in rando'>
+<div class="storiesLogo" >
+  <img class='storiesPicture' src="https://media.wizards.com/images/magic/daily/stf/stf163_fullMoonsRise.jpg" alt="">
+  <button ng-click='randomStory()' class='buttoni btn btn-danger'>Generate Story</button>
+</div>
+<div class='stories animated fadeInUp' ng-repeat='story in rando'>
   <p>{{story.author}}</p>
   <p>{{story.story}}</p>
 </div>

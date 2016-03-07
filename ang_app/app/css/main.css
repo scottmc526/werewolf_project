@@ -148,3 +148,41 @@ h3{
   width: 100%;
   opacity: .2;
 }
+
+.inputAuthor{
+  color: #D4B18A;
+}
+
+.inputStory{
+  color: #D4B18A;
+}
+
+.newContainer{
+  margin-top: 20px;
+  background-color: #422E24;
+}
+
+.authorText{
+  margin-top: 10px;
+  border-radius: 3px;
+  width: 80%;
+}
+
+.storyText{
+  border-radius: 3px;
+  width: 80%;
+}
+
+.ng-enter {
+  animation: fadeInTop .5s;
+}
+
+.buttoni{
+  position: relative;
+  bottom: 20%;
+  left: 45%;
+  right: 45%;
+  text-align: center;
+  color: #D4B18A;
+  background-color: #8c3232;
+}
