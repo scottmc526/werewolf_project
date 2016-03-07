@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
   })
 });
 
-router.post('/stories', function(req, res){
+router.post('/', function(req, res){
   Werewolf().insert(req.body).then(function(payload){
     res.json(payload)
   })
