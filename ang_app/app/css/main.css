@@ -2,6 +2,30 @@
   font-family: 'Playfair Display SC', serif;
 }
 
+.splashPic{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  opacity: .4;
+}
+
+.splashHeader{
+  color: #BD9876;
+  text-align: center;
+}
+
+h4{
+  color: #BD9876;
+  text-align: center;
+}
+
+header{
+  background-color: #422E24;
+  color: #BD9876;
+  border-radius: 5px;
+  padding-bottom: 2px;
+}
+
 .navbar-custom {
   background-color: #8c3232;
   border-color: #742929;
