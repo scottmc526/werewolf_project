@@ -14,6 +14,14 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+//CORS thingy
+app.use(function(req, res, next) {
+ res.header("Access-Control-Allow-Origin", "*");
+ res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+ next();
+});
+
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -30,21 +38,6 @@ app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
-});
-
-//CORS thingy
-app.use(function(req, res, next) {
- res.header("Access-Control-Allow-Origin", "*");
- res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
- next();
-});
-
-app.get('/', function(req, res, next) {
-  // Handle the get for this route
-});
-
-app.post('/', function(req, res, next) {
- // Handle the post for this route
 });
 
 // error handlers
