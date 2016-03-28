@@ -39,6 +39,10 @@ app.use(function(req, res, next) {
  next();
 });
 
+app.use(function (req, res) {
+    res.sendfile(__dirname + '/views/index.html');
+});
+
 // error handlers
 
 // development error handler
