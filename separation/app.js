@@ -39,6 +39,14 @@ app.use(function(req, res, next) {
  next();
 });
 
+app.get('/', function(req, res, next) {
+  // Handle the get for this route
+});
+
+app.post('/', function(req, res, next) {
+ // Handle the post for this route
+});
+
 // error handlers
 
 // development error handler
